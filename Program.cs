@@ -1,25 +1,39 @@
-﻿/*
- * Created by SharpDevelop.
- * User: Martin
- * Date: 24/02/2015
- * Time: 09:33 p. m.
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
+﻿
 using System;
 
 namespace Practica_1
 {
 	class Program
 	{
+		public static int suma(int a , int b){
+			return a+b;
+		}
+		
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			int numero1=0;
+			int numero2=0;
+			int opcion=0;
 			
-			// TODO: Implement Functionality Here
+			do{
+				Console.WriteLine("\n\tPRACTICA I EN C#\n\n");
+				Console.WriteLine("1)Suma\n2)Resta\n3)Multiplicacion\n4)Division\n5)Area Del Circulo\n6)Area Del Cuadrado\n7)Area Del triangulo\n8)Salir\n");
+				Console.WriteLine("Elige una opcion: ");
+				opcion=int.Parse(Console.ReadLine());
+				
+				switch(opcion) {
+						
+						case 1: Console.Write("Escribe un numero : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.Write("Escribe un numero : ");
+								numero2=int.Parse(Console.ReadLine());
+								Console.WriteLine("La Suma es {0}", suma(numero1,numero2) +"\n");
+								break;
+				}
+				
+			}while(opcion<=8);
 			
-			Console.Write("Press any key to continue . . . ");
-			Console.ReadKey(true);
+				
 		}
 	}
 }
