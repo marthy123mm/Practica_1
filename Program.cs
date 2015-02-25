@@ -21,6 +21,13 @@ namespace Practica_1
 			return a/b;
 		}
 		
+		public static double areaCirculo(int a ){
+			a=a*a;
+			return a*3.1416;
+			
+			
+		}
+		
 		public static void Main(string[] args)
 		{
 			int numero1=0;
@@ -61,6 +68,11 @@ namespace Practica_1
 								Console.Write("Escribe un numero : ");
 								numero2=int.Parse(Console.ReadLine());
 								Console.WriteLine("La division es " + division(numero1,numero2) +"\n");
+								break;
+								
+						case 5: Console.Write("Escribe el radio del circulo : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.WriteLine("El area del circulo es " + areaCirculo(numero1) +"\n");
 								break;
 								
 				}
