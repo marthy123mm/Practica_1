@@ -9,6 +9,10 @@ namespace Practica_1
 			return a+b;
 		}
 		
+		public static int resta(int a, int b){
+			return a-b;
+		}
+		
 		public static void Main(string[] args)
 		{
 			int numero1=0;
@@ -27,8 +31,16 @@ namespace Practica_1
 								numero1=int.Parse(Console.ReadLine());
 								Console.Write("Escribe un numero : ");
 								numero2=int.Parse(Console.ReadLine());
-								Console.WriteLine("La Suma es {0}", suma(numero1,numero2) +"\n");
+								Console.WriteLine("La Suma es " + suma(numero1,numero2) +"\n");
 								break;
+								
+						case 2: Console.Write("Escribe un numero : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.Write("Escribe un numero : ");
+								numero2=int.Parse(Console.ReadLine());
+								Console.WriteLine("La resta es " + resta(numero1,numero2) +"\n");
+								break;
+								
 				}
 				
 			}while(opcion<=8);
