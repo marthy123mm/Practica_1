@@ -13,6 +13,14 @@ namespace Practica_1
 			return a-b;
 		}
 		
+		public static int multiplicacion(int a, int b){
+			return a*b;
+		}
+		
+		public static int division(int a, int b){
+			return a/b;
+		}
+		
 		public static void Main(string[] args)
 		{
 			int numero1=0;
@@ -39,6 +47,20 @@ namespace Practica_1
 								Console.Write("Escribe un numero : ");
 								numero2=int.Parse(Console.ReadLine());
 								Console.WriteLine("La resta es " + resta(numero1,numero2) +"\n");
+								break;
+								
+						case 3: Console.Write("Escribe un numero : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.Write("Escribe un numero : ");
+								numero2=int.Parse(Console.ReadLine());
+								Console.WriteLine("La Multiplicacion es " + multiplicacion(numero1,numero2) +"\n");
+								break;
+						
+						case 4: Console.Write("Escribe un numero : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.Write("Escribe un numero : ");
+								numero2=int.Parse(Console.ReadLine());
+								Console.WriteLine("La division es " + division(numero1,numero2) +"\n");
 								break;
 								
 				}
