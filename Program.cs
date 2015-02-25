@@ -23,9 +23,15 @@ namespace Practica_1
 		
 		public static double areaCirculo(int a ){
 			a=a*a;
-			return a*3.1416;
-			
-			
+			return a*3.1416;	
+		}
+		
+		public static double areaCuadrado(int a){
+			return a*a;
+		}
+		
+		public static double areaTriangulo(int a, int b){
+			return ((b*a)/2);
 		}
 		
 		public static void Main(string[] args)
@@ -75,9 +81,21 @@ namespace Practica_1
 								Console.WriteLine("El area del circulo es " + areaCirculo(numero1) +"\n");
 								break;
 								
+						case 6: Console.Write("Escribe el lado del cuadrado : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.WriteLine("El area del cuadrado es " + areaCuadrado(numero1) +"\n");
+								break;
+								
+						case 7: Console.Write("Escribe la altura del triangulo : ");
+								numero1=int.Parse(Console.ReadLine());
+								Console.Write("Escribe la base del triangulo : ");
+								numero2=int.Parse(Console.ReadLine());
+								Console.WriteLine("El area del triangulo es " + areaTriangulo(numero1,numero2) +"\n");
+								break;
+																
 				}
 				
-			}while(opcion<=8);
+			}while(opcion<8);
 			
 				
 		}
