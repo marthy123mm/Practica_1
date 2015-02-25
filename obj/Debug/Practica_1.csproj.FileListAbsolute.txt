@@ -1,0 +1,6 @@
+C:\Users\Martin\Repositorios\Practica_1\bin\Debug\Practica_1.exe.config
+C:\Users\Martin\Repositorios\Practica_1\bin\Debug\Practica_1.exe
+C:\Users\Martin\Repositorios\Practica_1\bin\Debug\Practica_1.pdb
+C:\Users\Martin\Repositorios\Practica_1\obj\Debug\Practica_1.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Repositorios\Practica_1\obj\Debug\Practica_1.exe
+C:\Users\Martin\Repositorios\Practica_1\obj\Debug\Practica_1.pdb
